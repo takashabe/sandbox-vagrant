@@ -1,0 +1,19 @@
+{
+  "mysql": {
+    "server_root_password": "iloverandompasswordsbutthiswilldo",
+    "server_repl_password": "iloverandompasswordsbutthiswilldo",
+    "server_debian_password": "iloverandompasswordsbutthiswilldo",
+    "app_user_password": "iloverandompasswordsbutthiswilldo"
+  },
+  "play": {
+    "dir": "/opt/play",
+    "user": "sandbox",
+    "group": "sandbox",
+    "version": "2.2.1"
+  },
+  "run_list":[
+    "recipe[sandbox]",
+    "recipe[my_mysql]",
+    "recipe[playframework]"
+  ]
+}
